@@ -1,0 +1,243 @@
+@import url(http://allfont.net/allfont.css?fonts=silkscreen);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://static.pexels.com/photos/196659/pexels-photo-196659.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+ul li {
+  list-style: none;
+}
+/*************ACCORDION MENU****************/
+
+.tab-group {
+  font-family: 'Silkscreen', arial;
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 40em;
+  width: 25%;
+  box-shadow: 0 .2em 1em #111;
+}
+
+.tab {
+  position: relative;
+  width: 100%;
+}
+
+.tab input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -999;
+}
+
+.tab label.tabLabel {
+  background: rgba(0,0,0,.5);
+  color: rgba(255,255,255,.9);
+  display: block;
+  font-weight: bold;
+  line-height: 3;
+  padding-left: .5em;
+  /*margin-bottom: .5em;*/
+  transition: letter-spacing .55s;
+  border-bottom: 1px solid rgba(0,0,0,.5);
+}
+
+.tab input:focus + label,
+.tab label:hover {
+  /*background: rgba(100,100,100,.5);;*/
+  color: rgba(255,255,255,.5);
+  letter-spacing: 1px;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .35s;
+}
+
+.tab-content ul li {
+  margin: 1em 0;
+  color: rgba(255,255,255,.9);
+}
+
+.tab-content ul li a {
+  color: rgba(255,255,255,.9);
+  text-decoration: none;
+}
+
+.tab-content ul {
+  padding: 0;
+  margin: 0;
+}
+
+li label, li p, li a {
+  margin: -16px 0;
+  padding: 0;
+  padding-top: 15px;
+  max-height: 90px;
+  min-height: 50px;
+  border: 1px solid rgba(0,0,0,.5);
+  width: 100%;
+  display: block;
+
+}
+
+
+.tab input:checked ~ .tab-content {
+  max-height: 25em;
+}
+
+span {
+  padding: 0 5px;
+}
+
+.colorOne {
+  background-color: rgba(219, 207, 176, .5);
+}
+
+.colorTwo {
+  background-color: rgba(191, 200, 173, .5);
+}
+
+.colorThree {
+  background-color: rgba(144, 180, 148, .5);
+}
+
+.colorFour {
+  background-color: rgba(113, 143, 148, .5);
+}
+
+.colorFive {
+  background-color: rgba(84, 87, 117, .5);
+}
+
+.colorSix {
+  background-color: rgba(101, 79, 111, .5);
+}
+
+/*******************SLIDER***************************/
+
+.wrap {
+  background: #120103;
+  color: #fff;
+  width: 65%;
+  height: 90%;
+  position: absolute;
+  z-index: 0;
+  top: 5%;
+  left: 30%;
+  text-align: center;
+  box-shadow: 0 .2em 1em #111;
+  overflow: hidden;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-color: #120103;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: left 0s .75s;
+}
+
+.slide-one {
+  background-image: url('img/portfolio.png');
+}
+
+.slide-two {
+  background-image: url('img/atm.png');
+}
+
+.slide-three {
+  background-image: url('img/quote-machine.png');
+}
+
+.slide-four {
+  background-image: url('img/groceries.png');
+}
+
+.slide-five {
+  background-image: url('img/nutrition.png');
+}
+
+.slide-six {
+  background-image: url('img/podcast.png');
+}
+
+.slide-seven {
+  background-image: url('img/earthquakes.png');
+}
+
+.slide-eight {
+  background-image: url('img/reddit.png');
+}
+
+.slide-nine {
+  background-image: url('img/tic-tac-toe.png');
+}
+
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left .65s ease-out;
+}
+
+.slide div.description {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform .5s .5s, opacity .5s;
+}
+
+[id^="slide"]:checked + .slide div.description {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all .5s .5s;
+}
+
+/*****************SLIDE DESCRIPTION**********************/
+
+div.description {
+  background: rgba(0,0,0,.3);
+  width: 100%;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div.description h2, h3, p {
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+div.description li {
+  list-style: none;
+}
+
+i {
+  margin: 5px;
+}
