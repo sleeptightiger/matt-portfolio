@@ -216,7 +216,7 @@ span {
 div.description {
   background: rgba(0,0,0,.3);
   width: 100%;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 1);
   text-align: left;
   position: absolute;
   bottom: 0;
@@ -231,7 +231,7 @@ div.description h2, h3, p {
 
 a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 1);
 }
 
 div.description li {
