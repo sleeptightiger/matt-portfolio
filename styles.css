@@ -23,8 +23,8 @@ ul li {
 .tab-group {
   font-family: 'Silkscreen', arial;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 2.5%;
+  top: 5%;
   max-width: 40em;
   width: 25%;
   box-shadow: 0 .2em 1em #111;
@@ -137,7 +137,7 @@ span {
   position: absolute;
   z-index: 0;
   top: 5%;
-  left: 30%;
+  left: 31.5%;
   text-align: center;
   box-shadow: 0 .2em 1em #111;
   overflow: hidden;
@@ -158,39 +158,39 @@ span {
 }
 
 .slide-one {
-  background-image: url('img/portfolio.png');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('img/portfolio.png');
 }
 
 .slide-two {
-  background-image: url('img/atm.png');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('img/atm.png');
 }
 
 .slide-three {
-  background-image: url('img/quote-machine.png');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('img/quote-machine.png');
 }
 
 .slide-four {
-  background-image: url('img/groceries.png');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('img/groceries.png');
 }
 
 .slide-five {
-  background-image: url('img/nutrition.png');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('img/nutrition.png');
 }
 
 .slide-six {
-  background-image: url('img/podcast.png');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('img/podcast.png');
 }
 
 .slide-seven {
-  background-image: url('img/earthquakes.png');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('img/earthquakes.png');
 }
 
 .slide-eight {
-  background-image: url('img/reddit.png');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('img/reddit.png');
 }
 
 .slide-nine {
-  background-image: url('img/tic-tac-toe.png');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('img/tic-tac-toe.png');
 }
 
 [id^="slide"]:checked + .slide {
